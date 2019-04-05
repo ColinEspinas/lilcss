@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="lil-row -middle -center">
+    <header class="lil-row middle center">
         <div class="lil-col">
             <h1 class="header-title">lil.css</h1>
             <p class="header-text">Simple and responsive.</p>
@@ -172,10 +172,10 @@
                 </p>
 
                 <div class="lil-row">
-                    <div class="lil-col -6-12">
+                    <div class="lil-col 6-12">
                         <p class="ex-col">I'm a column!</p>
                     </div>
-                    <div class="lil-col -6-12">
+                    <div class="lil-col 6-12">
                         <p class="ex-col">I another column!</p>
                     </div>
                 </div>
@@ -192,43 +192,43 @@
                         <th>Property</th>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-top</span></td>
+                        <td><span class="lil-code">top</span></td>
                         <td>Pull your columns to the top of the row.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-middle</span></td>
+                        <td><span class="lil-code">middle</span></td>
                         <td>Pull your columns to the middle of the row.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-bottom</span></td>
+                        <td><span class="lil-code">bottom</span></td>
                         <td>Pull your columns to the bottom of the row.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-stretch</span></td>
+                        <td><span class="lil-code">stretch</span></td>
                         <td>Stretch the columns.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-baseline</span></td>
+                        <td><span class="lil-code">baseline</span></td>
                         <td>Pull columns content to baseline.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-left</span></td>
+                        <td><span class="lil-code">left</span></td>
                         <td>Pull your columns to the left of the row.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-center</span></td>
+                        <td><span class="lil-code">center</span></td>
                         <td>Pull your columns to the center of the row.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-right</span></td>
+                        <td><span class="lil-code">right</span></td>
                         <td>Pull your columns to the right of the row.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-between</span></td>
+                        <td><span class="lil-code">between</span></td>
                         <td>Add spaces between your columns.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-around</span></td>
+                        <td><span class="lil-code">around</span></td>
                         <td>Add spaces around your columns.</td>
                     </tr>
                 </table>
@@ -241,35 +241,35 @@
                         <th>Property</th>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-n-12</span></td>
+                        <td><span class="lil-code">n-12</span></td>
                         <td>Replacing "n" by the a integer (1-12) you can change the size of the column.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-half</span></td>
+                        <td><span class="lil-code">half</span></td>
                         <td>Make your col 50%-10px of the parent's width (use it with <span class="lil-code">-between</span>
                             to get spaces between
                             your
                             columns).</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-third</span></td>
+                        <td><span class="lil-code">third</span></td>
                         <td>Same as <span class="lil-code">-half</span> but with col 33.333...%-10px of the
                             parent's
                             width.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-quarter</span></td>
+                        <td><span class="lil-code">quarter</span></td>
                         <td>Same as <span class="lil-code">-half</span> but with col 25%-10px of the
                             parent's width.</td>
                     </tr>
                     <tr>
-                        <td><span class="lil-code">-fill</span></td>
+                        <td><span class="lil-code">fill</span></td>
                         <td>Set the column width to left.</td>
                     </tr>
                 </table>
 
-                <div class="lil-row -between">
-                    <div class="lil-col -half">
+                <div class="lil-row between">
+                    <div class="lil-col half">
                         <section class="lil-section">
                             <div class="header">
                                 <h2 class="title">Section 1</h2>
@@ -287,7 +287,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="lil-col -half">
+                    <div class="lil-col half">
                         <section class="lil-section">
                             <div class="header">
                                 <h2 class="title">Section 2</h2>
@@ -400,21 +400,21 @@
             <div class="body">
                 <p>You can use custom inputs along with the grid to make nice forms.</p>
                 <form>
-                    <div class="lil-row -between">
-                        <div class="lil-col -half">
-                            <label>Your email</label>
+                    <div class="lil-row between">
+                        <div class="lil-col half">
+                            <label class="lil-label">Your email</label>
                             <input type="email" class="lil-input width-100" placeholder="exemple@exemple.com">
                             <small class="lil-info">Please enter your email address.</small>
                         </div>
-                        <div class="lil-col -half">
-                            <label>Your name</label>
+                        <div class="lil-col half">
+                            <label class="lil-label">Your name</label>
                             <input type="text" class="lil-input width-100" placeholder="Josh Kurt">
                             <small class="lil-info">Please enter your awesome name.</small>
                         </div>
                     </div>
                     <div class="lil-row">
-                        <div class="lil-col -12-12">
-                            <label>Message</label>
+                        <div class="lil-col 12-12">
+                            <label class="lil-label">Message</label>
                             <textarea class="lil-input width-100" placeholder="Hey there..."></textarea>
                         </div>
                     </div>

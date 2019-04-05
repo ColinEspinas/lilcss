@@ -8,10 +8,10 @@ var codeExempleGrid1 = document.getElementById('codeExempleGrid1');
 
 var codeExempleGrid1Text = 
 `<div class="lil-row">
-    <div class="lil-col -6-12">
+    <div class="lil-col 6-12">
         <p>I am column!</p>
     </div>
-    <div class="lil-col -6-12">
+    <div class="lil-col 6-12">
         <p>I another column!</p>
     </div>
 </div>
