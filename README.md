@@ -1,2 +1,2 @@
 # lilcss
-💡 Liteweight CSS framework for everyday prototyping
+💡 Liteweight CSS framework for everyday use
