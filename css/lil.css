@@ -98,30 +98,6 @@ a:visited:hover:not(.lil-btn) {
     text-decoration: underline;
 }
 
-.lil-section {
-    margin: 50px 0;
-    text-align: left;
-}
-
-.lil-section .title {
-    font-size: 2rem;
-    text-align: left;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-}
-
-.lil-section .subtitle {
-    margin: 25px 0 15px 0;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-.lil-section .tinytitle {
-    margin: 15px 0 10px 0;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
 hr {
     border: none;
     height: 1px;
@@ -129,11 +105,38 @@ hr {
     background-color: var(--lightgray);
 }
 
+.no-margin {
+    margin: 0;
+}
+
+.margin-tb-5 {
+    margin: 5px 0;
+}
+
+.margin-lr-5 {
+    margin: 0 5px;
+}
+
+.margin-tb-10 {
+    margin: 10px 0;
+}
+
+.margin-lr-5 {
+    margin: 0 10px;
+}
+
+.margin-tb-15 {
+    margin: 15px 0;
+}
+
+.margin-lr-15 {
+    margin: 0 15px;
+}
+
 .lil-btn {
     font-family:var(--regularfont);
     font-size: 0.9em;
     outline: none;
-    margin: 5px 0;
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     background: var(--blue);
@@ -537,6 +540,109 @@ textarea.lil-input.valid::placeholder {
     color: var(--green);
 }
 
+.lil-card {
+    border: 1px solid var(--mediumlightgray);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.lil-card>.lil-card-body {
+    padding: 15px;
+}
+
+.lil-card>.lil-card-header {
+    padding: 15px;
+    background: var(--lightgray);
+    font-weight: bold;
+    font-size: 1.20rem;
+}
+
+.lil-card>.lil-card-body>.lil-card-title {
+    margin: 0;
+    font-size: 1.20rem;
+    font-weight: bold;
+}
+
+.lil-card>.lil-card-img {
+    width: 100%;
+    display: block;
+}
+
+.lil-card>.lil-card-footer {
+    padding: 15px;
+    border-bottom: 1px solid var(--mediumlightgray);
+    background: var(--lightgray);
+}
+
+.lil-nav {
+    background-color: var(--lightgray);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.lil-nav-items {
+    float: left;
+    list-style-type: none;
+    padding: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.lil-nav-items>li {
+    float: left;
+}
+
+.lil-nav-brand {
+    display: block;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.40rem;
+    line-height: 1rem;
+    color: var(--darkgray) !important;
+    text-decoration: none !important;
+}
+
+.lil-nav-brand img {
+    display: block;
+    float: left;
+    height: 46px;
+    transform: translateY(-15px);
+    margin-right: 15px;
+    border-radius: 3px;
+}
+.lil-nav-items>li>a.lil-btn {
+    display: block;
+    margin: 15px;
+    font-size: 1rem;
+}
+
+.lil-nav-items>li>.lil-btn {
+    float: left;
+    display: block;
+    margin: 15px;
+    font-size: 1rem;
+}
+
+.lil-nav-items>li>.lil-input {
+    float: left;
+    margin: 15px;
+}
+
+.lil-nav-items>li>a:not(.lil-btn):not(.lil-nav-brand) {
+    display: block;
+    line-height: 1rem;
+    padding: 30px 15px;
+    color: var(--darkgray) !important;
+    text-decoration: none !important;
+    transition: background 0.3s ease;
+}
+
+.lil-nav-items>li>a:not(.lil-btn):not(.lil-nav-brand):hover {
+    background-color: var(--mediumlightgray);
+}
+
 .line-clip {
     overflow: hidden;
     text-overflow: clip;
@@ -552,11 +658,11 @@ textarea.lil-input.valid::placeholder {
 }
 
 .left {
-    float: left;
+    float: left !important;
 }
 
 .right {
-    float: right;
+    float: right !important;
 }
 
 .center {
@@ -594,7 +700,14 @@ textarea.lil-input.valid::placeholder {
 }
 
 .lil-clear {
+    content: "";
+    display: table;
     clear: both;
+}
+
+.max-width-100 {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .width-100 {
