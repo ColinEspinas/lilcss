@@ -28,6 +28,16 @@ main {
     background-color: var(--blue);
     border-radius: 3px;
     border: 1px solid var(--darkblue);
+    margin: 10px 0;
+}
+
+.ex-col-nm {
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 3px;
+    border: 1px solid var(--darkblue);
+    margin: 0;
 }
 
 footer {
