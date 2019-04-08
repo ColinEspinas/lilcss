@@ -1,3 +1,7 @@
+body {
+    padding: 15px;
+}
+
 header {
     color: var(--darkgray);
     height: 300px;
