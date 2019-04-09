@@ -22,9 +22,9 @@
     --white: #ffffff;
 }
 
-body {
+body, html {
     font-family: var(--regularfont);
-    margin: 0;
+    margin: 0 !important;
     color: var(--darkgray);
 }
 
