@@ -103,6 +103,34 @@ hr {
     background-color: var(--lightgray);
 }
 
+.no-padding {
+    padding: 0;
+}
+
+.padding-tb-5 {
+    padding: 5px 0;
+}
+
+.padding-lr-5 {
+    padding: 0 5px;
+}
+
+.padding-tb-10 {
+    padding: 10px 0;
+}
+
+.padding-lr-5 {
+    padding: 0 10px;
+}
+
+.padding-tb-15 {
+    padding: 15px 0;
+}
+
+.padding-lr-15 {
+    padding: 0 15px;
+}
+
 .no-margin {
     margin: 0;
 }
