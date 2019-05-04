@@ -761,6 +761,31 @@ textarea.lil-input.valid::placeholder {
     box-sizing: border-box;
 }
 
+.height-100 {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.height-75 {
+    height: 75%;
+    box-sizing: border-box;
+}
+
+.height-50 {
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.height-33 {
+    height: calc(100% / 3);
+    box-sizing: border-box;
+}
+
+.height-25 {
+    height: 25%;
+    box-sizing: border-box;
+}
+
 .lil-row          { display: flex; flex-wrap: wrap; }
 .lil-row.top      { align-items: flex-start; }
 .lil-row.middle   { align-items: center; }
