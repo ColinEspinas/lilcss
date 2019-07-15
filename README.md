@@ -3,7 +3,7 @@
 
 ### How to use:
 Just link lil.css in your html from the CDN:
-```
+```html
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ColinEspinas/lilcss/css/lil.min.css'>
 ```
 Or download the css files from the github repository.
