@@ -2,601 +2,601 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>lil.css - Simple and Responsive</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>lil.css - Simple and Responsive</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lil.css">
-    <link rel="stylesheet" href="css/code.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
+	<link rel="stylesheet" href="css/web/style.css">
+	<link rel="stylesheet" href="css/lil.css">
+	<link rel="stylesheet" href="css/web/code.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
 </head>
 
 <body>
-    <header class="lil-row middle center">
-        <div class="lil-col">
-            <h1 class="header-title">lil.css</h1>
-            <p class="header-text">Simple and responsive.</p>
-        </div>
-    </header>
-    <main>
-        <p>Hello!</p>
-        <p>Here you can find the CSS library called "lil.css", it's a simple styling library that I've developped
-            to
-            do more quickly my tiny projects. It features a positioning system and stylized HTML components.</p>
-        <p>You can use it freely and customize it all according to your preferences.</p>
-
-
-        <!--============Install Section============-->
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">How do I get it ?</h2>
-                <hr>
-            </div>
-            <div class="body">
-
-                <p>You can download the source file here (normal & minified) : <a class="lil-btn inline block"
-                        href="css/lil.css" download="lil">Get
-                        lil.css</a> <a class="lil-btn inline block" href="css/lil.css" download="lil">Get
-                        lil.min.css</a></p>
-                <p>Next you just have to link it in your HTML file head tag :</p>
-
-                <pre><code class="html"><link rel="stylesheet" href="lil.css"></code></pre>
-
-            </div>
-        </section>
-
-
-        <!--============Positioning Section============-->
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Positioning</h2>
-                <hr>
-            </div>
-            <div class="body">
-                <p>Thanks to a custom grid and some custom
-                    HTML/CSS classes, lil.css can help you to organise your elements.
-                </p>
-
-
-                <h3 class="subtitle">Left, Right, Center :</h3>
-
-                <button class="lil-btn blue width-50 left">Left</button>
-                <div class="lil-clear"></div>
-                <button class="lil-btn blue width-50 center" style="margin: 10px auto;">Center</button>
-                <button class="lil-btn blue width-50 right">Right</button>
-                <div class="lil-clear"></div>
-
-                <p>You can use the <span class="lil-code">left</span>, <span class="lil-code">right</span> and <span
-                        class="lil-code">center</span> classes to position your elements. Do not forget to
-                    include the <span class="lil-code">lil-clear</span> element when it is needed to end the float
-                    property.
-                </p>
-                <p>PS: <span class="lil-code">left</span> and <span class="lil-code">right</span> use floats but <span
-                        class="lil-code">center</span> use margin and display so you will need the
-                    <span class="lil-code">lil-clear</span> element to isolate them.
-                </p>
-
-                <pre><code class="html"><button class="lil-btn blue width-50 left">Left</button>&#13;<div class="lil-clear"></div>&#13;<button class="lil-btn blue width-50 center">Center</button>&#13;<button class="lil-btn blue width-50 right">Right</button>&#13;<div class="lil-clear"></div></code></pre>
-
-
-                <h3 class="subtitle">Text align :</h3>
-
-                <p>If you need to change your text align you can use the <span
-                        class="lil-code">text-<i>(insert-your-align)</i></span>
-                    class.</p>
-
-                <h4 class="tinytitle">Center :</h4>
-                <p class="text-center"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-                            accusantium esse
-                            deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet mollitia
-                            eos,
-                            fugiat cupiditate rem. Ducimus, accusantium.</small></i>
-                </p>
-                <h4 class="tinytitle">Left :</h4>
-                <p class="text-left"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-                            accusantium esse
-                            deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet mollitia
-                            eos,
-                            fugiat cupiditate rem. Ducimus, accusantium.</small></i>
-                </p>
-                <h4 class="tinytitle">Right :</h4>
-                <p class="text-right"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-                            accusantium esse
-                            deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet
-                            mollitia eos,
-                            fugiat cupiditate rem. Ducimus, accusantium.</small></i>
-                </p>
-                <h4 class="tinytitle">Justify :</h4>
-                <p class="text-justify"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sint accusantium esse
-                            deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet
-                            mollitia eos,
-                            fugiat cupiditate rem. Ducimus, accusantium.</small></i>
-                </p>
-
-                <pre><code class="html"><p class="text-center">This is a centered paragraph.</p>&#13;<p class="text-left">This is a left paragraph.</p>&#13;<p class="text-right">This is a right paragraph.</p>&#13;<p class="text-justify">This is a justified paragraph.</p></code></pre>
-
-
-                <h3 class="subtitle">Block, Inline :</h3>
-
-                <p>By using the <span class="lil-code">block</span> and <span class="lil-code">inline</span>
-                    classes
-                    you can change the display property without looking at
-                    the CSS.
-                </p>
-
-                <h4 class="tinytitle">Block :</h4>
-
-                <button class="lil-btn blue block">Blue</button>
-                <button class="lil-btn red block" style="margin: 10px 0;">Red</button>
-                <button class="lil-btn green block">Green</button>
-
-                <p>Simply use the <span class="lil-code">block</span> class to add the <span class="lil-code">display:
-                        block</span> property to an element.</p>
-
-                <pre><code class="html"><button class="lil-btn blue block">Blue</button>&#13;<button class="lil-btn red block">Red</button>&#13;<button class="lil-btn green block">Green</button></code></pre>
-
-                <h4 class="tinytitle">Inline :</h4>
-
-                <button class="lil-btn blue inline">Blue</button>
-                <button class="lil-btn red inline">Red</button>
-                <button class="lil-btn green inline">Green</button>
-
-                <p>You can also use the <span class="lil-code">inline</span> class to add the <span
-                        class="lil-code">display:
-                        inline</span> property to an element.</p>
-
-                <pre><code class="html"><button class="lil-btn blue inline">Blue</button>&#13;<button class="lil-btn red inline">Red</button>&#13;<button class="lil-btn green inline">Green</button></code></pre>
-
-                <h4 class="tinytitle">Inline-block :</h4>
-
-                <button class="lil-btn blue inline block">Blue</button>
-                <button class="lil-btn red block inline">Red</button>
-                <button class="lil-btn green inline block">Green</button>
-
-                <p>By adding both the <span class="lil-code">block</span> and <span class="lil-code">inline</span>
-                    classes you can add the <span class="lil-code">display: inline-block</span> property
-                    to an element.
-                </p>
-
-                <pre><code class="html"><button class="lil-btn blue inline block">Blue</button>&#13;<button class="lil-btn red block inline">Red</button>&#13;<button class="lil-btn green inline block">Green</button></code></pre>
-
-
-                <h3 class="subtitle">The grid :</h3>
-
-                <p>lil.css comes with a custom grid (inspired by <a href="https://github.com/1000ch/grd"
-                        target="_blank">Grd</a>)
-                    to help with the layout of your project(s). The grid is very light and
-                    simple to use.
-                </p>
-
-                <div class="lil-row">
-                    <div class="lil-col 6-12">
-                        <p class="ex-col-nm">I'm a column!</p>
-                    </div>
-                    <div class="lil-col 6-12">
-                        <p class="ex-col-nm">I another column!</p>
-                    </div>
-                </div>
-
-                <p>Create rows and columns using <span class="lil-code">lil-row</span> and <span
-                        class="lil-code">lil-col</span>.</p>
-
-                <pre><code class="html" id="codeExempleGrid1"></code></pre>
-
-                <p>Classes you can use on a <span class="lil-code">lil-row</span> :</p>
-
-                <table class="lil-table width-100">
-                    <tr>
-                        <th>Class</th>
-                        <th>Property</th>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">top</span></td>
-                        <td>Pull your columns to the top of the row.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">middle</span></td>
-                        <td>Pull your columns to the middle of the row.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">bottom</span></td>
-                        <td>Pull your columns to the bottom of the row.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">stretch</span></td>
-                        <td>Stretch the columns.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">baseline</span></td>
-                        <td>Pull columns content to baseline.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">left</span></td>
-                        <td>Pull your columns to the left of the row.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">center</span></td>
-                        <td>Pull your columns to the center of the row.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">right</span></td>
-                        <td>Pull your columns to the right of the row.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">between</span></td>
-                        <td>Add spaces between your columns.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">around</span></td>
-                        <td>Add spaces around your columns.</td>
-                    </tr>
-                </table>
-
-                <p>Classes you can use on a <span class="lil-code">lil-col</span> :</p>
-
-                <table class="lil-table width-100">
-                    <tr>
-                        <th>Class</th>
-                        <th>Property</th>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">n-12</span></td>
-                        <td>Replacing "n" by the a integer (1-12) you can change the size of the column.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="lil-code">fill</span></td>
-                        <td>Set the column width to left.</td>
-                    </tr>
-                </table>
-
-                <p>Here is a little exemple of what you can do with the grid:</p>
-
-                <div class="lil-row between">
-                    <div class="lil-col 1-12">
-                        <p class="ex-col line-clip">1-12</p>
-                    </div>
-                    <div class="lil-col 11-12">
-                        <p class="ex-col">11-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 2-12">
-                        <p class="ex-col">2-12</p>
-                    </div>
-                    <div class="lil-col 10-12">
-                        <p class="ex-col">10-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 3-12">
-                        <p class="ex-col">3-12</p>
-                    </div>
-                    <div class="lil-col 9-12">
-                        <p class="ex-col">9-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 4-12">
-                        <p class="ex-col">4-12</p>
-                    </div>
-                    <div class="lil-col 8-12">
-                        <p class="ex-col">8-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 5-12">
-                        <p class="ex-col">5-12</p>
-                    </div>
-                    <div class="lil-col 7-12">
-                        <p class="ex-col">7-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 6-12">
-                        <p class="ex-col">6-12</p>
-                    </div>
-                    <div class="lil-col 6-12">
-                        <p class="ex-col">6-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 7-12">
-                        <p class="ex-col">7-12</p>
-                    </div>
-                    <div class="lil-col 5-12">
-                        <p class="ex-col">5-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 8-12">
-                        <p class="ex-col">8-12</p>
-                    </div>
-                    <div class="lil-col 4-12">
-                        <p class="ex-col">4-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 9-12">
-                        <p class="ex-col">9-12</p>
-                    </div>
-                    <div class="lil-col 3-12">
-                        <p class="ex-col">3-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 10-12">
-                        <p class="ex-col">10-12</p>
-                    </div>
-                    <div class="lil-col 2-12">
-                        <p class="ex-col">2-12</p>
-                    </div>
-                </div>
-                <div class="lil-row between">
-                    <div class="lil-col 11-12">
-                        <p class="ex-col">11-12</p>
-                    </div>
-                    <div class="lil-col 1-12">
-                        <p class="ex-col line-clip">1-12</p>
-                    </div>
-                </div>
-
-                <pre><code class="html" id="codeExempleGrid2"></code></pre>
-
-        </section>
-
-
-        <!--============Sizing Section============-->
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Sizing</h2>
-                <hr>
-            </div>
-            <div class="body">
-
-                <p>You can quickly change the width of your elements by adding the class <span
-                        class="lil-code">width-25/33/50/75/100</span>.</p>
-
-                <p class="width-25 ex-col">My width is 25%</p>
-                <p class="width-33 ex-col">My width is 33%</p>
-                <p class="width-50 ex-col">My width is 50%</p>
-                <p class="width-75 ex-col">My width is 75%</p>
-                <p class="width-100 ex-col">My width is 100%</p>
-
-                <pre><code class="html"><p class="width-25">My width is 25%</p>&#13;<p class="width-33">My width is 33%</p>&#13;<p class="width-50">My width is 50%</p>&#13;<p class="width-75">My width is 75%</p>&#13;<p class="width-100">My width is 100%</p></code></pre>
-
-            </div>
-        </section>
-
-
-        <!--============Buttons Section============-->
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Buttons</h2>
-                <hr>
-            </div>
-            <div class="body">
-
-                <p>Here you have some customs buttons. You can use different colors, sizes, and styles by adding
-                    simple classes.
-                </p>
-                <p>Just use the <span class="lil-code">lil-btn</span> class to use them.</p>
-
-
-                <h3 class="subtitle">Regular Buttons :</h3>
-
-                <div>
-                    <button class="lil-btn margin-tb-5">Blue (Default)</button>
-                    <button class="lil-btn red margin-tb-5">Red</button>
-                    <button class="lil-btn green margin-tb-5">Green</button>
-                    <button class="lil-btn yellow margin-tb-5">Yellow</button>
-                    <button class="lil-btn orange margin-tb-5">Orange</button>
-                    <button class="lil-btn purple margin-tb-5">Purple</button>
-                    <button class="lil-btn light margin-tb-5">Light</button>
-                    <button class="lil-btn dark margin-tb-5">Dark</button>
-                    <button class="lil-btn link margin-tb-5">Link</button>
-                    <button class="lil-btn" disabled>Disabled</button>
-                </div>
-
-                <p>You can change the color of a button simply by adding the corresponding color class.</p>
-
-                <pre><code class="html"><button class="lil-btn red">Red button</button></code></pre>
-
-
-                <h3 class="subtitle">Outline buttons :</h3>
-
-                <div>
-                    <button class="lil-btn outline margin-tb-5">Blue (Default)</button>
-                    <button class="lil-btn outline red margin-tb-5">Red</button>
-                    <button class="lil-btn outline green margin-tb-5">Green</button>
-                    <button class="lil-btn outline yellow margin-tb-5">Yellow</button>
-                    <button class="lil-btn outline orange margin-tb-5">Orange</button>
-                    <button class="lil-btn outline purple margin-tb-5">Purple</button>
-                </div>
-
-                <p>You can make an outline button by adding the <span class="lil-code">outline</span> class to an
-                    element with the <span class="lil-code">lil-btn</span>
-                    class.
-                </p>
-
-                <pre><code class="html"><button class="lil-btn outline orange">Orange outline button</button></code></pre>
-
-            </div>
-        </section>
-
-
-        <!--============Inputs Section============-->
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Inputs</h2>
-                <hr>
-            </div>
-            <div class="body">
-                <p>You can use custom inputs along with the grid to make nice forms.</p>
-                <form>
-                    <div class="lil-row between">
-                        <div class="lil-col 6-12">
-                            <label class="lil-label">Your email</label>
-                            <input type="email" class="lil-input width-100" placeholder="exemple@exemple.com">
-                            <small class="lil-info">Please enter your email address.</small>
-                        </div>
-                        <div class="lil-col 6-12">
-                            <label class="lil-label">Your name</label>
-                            <input type="text" class="lil-input width-100" placeholder="Josh Kurt">
-                            <small class="lil-info">Please enter your awesome name.</small>
-                        </div>
-                    </div>
-                    <div class="lil-row">
-                        <div class="lil-col 12-12">
-                            <label class="lil-label">Message</label>
-                            <textarea class="lil-input max-width-100 width-100" placeholder="Hey there..."></textarea>
-                        </div>
-                    </div>
-                    <div class="lil-row">
-                        <button type="submit" class="lil-btn width-25">Submit</button>
-                    </div>
-                </form>
-                <p>You can make simple inputs using the <span class="lil-code">lil-input</span> class on your inputs.
-                </p>
-            </div>
-        </section>
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Fonts & Typography</h2>
-                <hr>
-            </div>
-            <div class="body">
-                <p>The font <b>lil.css</b> uses is <a href="https://fonts.google.com/specimen/Heebo">"Heebo" provided by
-                        Google Fonts</a>.</p>
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
-                <p>Paragraph with <b>bold</b>, <u>underline</u> and <i>Italic</i></p>
-            </div>
-        </section>
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Cards</h2>
-                <hr>
-            </div>
-            <div class="body">
-                <p>Lilcss includes cards that can help you contain your content:</p>
-                <div class="lil-row between">
-                    <div class="lil-col 4-12 margin-tb-10">
-                        <div class="lil-card width-100">
-                            <img class="lil-card-img" src="https://picsum.photos/300/150" alt="">
-                            <div class="lil-card-body">
-                                <h5 class="lil-card-title">This is my card body title</h5>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto ipsa
-                                    illum
-                                    dolorum quibusdam dolorem.</p>
-                                <button class="lil-btn width-100">My fav button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lil-col 4-12 margin-tb-10">
-                        <div class="lil-card width-100">
-                            <div class="lil-card-header">
-                                Card header
-                            </div>
-                            <div class="lil-card-body">
-                                <h5 class="lil-card-title">This is my card body title</h5>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto ipsa
-                                    illum
-                                    dolorum quibusdam dolorem.</p>
-                                <button class="lil-btn width-100">My fav button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lil-col 4-12 margin-tb-10">
-                        <div class="lil-card width-100">
-                            <div class="lil-card-body">
-                                <h5 class="lil-card-title">This is my card body title</h5>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto ipsa
-                                    illum
-                                    dolorum quibusdam dolorem.</p>
-                            </div>
-                            <div class="lil-card-footer">
-                                <button class="lil-btn width-100">I'm a button on the footer</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <br>
-                <div class="lil-row">
-                    <p>It is as easy to use as the rest, just use <span class="lil-code">lil-card</span> to create your
-                        card and <span class="lil-code">lil-card-header</span>, <span
-                            class="lil-code">lil-card-body</span>, <span class="lil-code">lil-card-footer</span> to
-                        structure your card.
-                    </p>
-                    <p>You can also add a body title to your card by using the <span
-                            class="lil-code">lil-card-title</span> class in the body of your card.
-                    </p>
-                    <p>If you want to add images just use the <span class="lil-code">lil-card-img</span> class.</p>
-                </div>
-            </div>
-        </section>
-        <section class="lil-section">
-            <div class="header">
-                <h2 class="title">Navigation</h2>
-                <hr>
-            </div>
-            <div class="body">
-                <p>You can make navigation containing links, <span class="lil-code">lil-btn</span> elements and <span class="lil-code">lil-input</span> elements</p>
-                <nav class="lil-nav">
-                    <ul class="lil-nav-items">
-                        <li><a class="lil-nav-brand" href="#">
-                                <img src="https://picsum.photos/200/?random" alt="">
-                                lil.css</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li class="right">
-                            <input class="lil-input" type="text" style="margin-right:5px;" placeholder="Search">
-                            <button class="lil-btn" style="margin-left:5px;">Search</button>
-                        </li>
-                    </ul>
-                    <div class="lil-clear"></div>
-                </nav>
-            </div>
-        </section>
-
-        <div class="lil-row between">
-            <div class="lil-col sm-6-12 md-12-12">
-                <p class="ex-col">Col</p>
-            </div>
-            <div class="lil-col sm-6-12 md-12-12">
-                <p class="ex-col">Col</p>
-            </div>
-        </div>
-
-    </main>
-
-    <footer>
-        <hr>
-        <div class="left">
-            <p>Made with love by Colin</p>
-        </div>
-        <div class="right">
-            <p>Copyright 2018</p>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
-    <script>
-        document.querySelectorAll("code").forEach(function (element) {
-            element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g,
-                "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-        });
-    </script>
+	<header class="lil-row middle center">
+		<div class="lil-col">
+			<h1 class="header-title">lil.css</h1>
+			<p class="header-text">Simple and responsive.</p>
+		</div>
+	</header>
+	<main>
+		<p>Hello!</p>
+		<p>Here you can find the CSS library called "lil.css", it's a simple styling library that I've developped
+			to
+			do more quickly my tiny projects. It features a positioning system and stylized HTML components.</p>
+		<p>You can use it freely and customize it all according to your preferences.</p>
+
+
+		<!--============Install Section============-->
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">How do I get it ?</h2>
+				<hr>
+			</div>
+			<div class="body">
+
+				<p>You can download the source file here (normal & minified) : <a class="lil-btn inline block"
+						href="css/lil.css" download="lil">Get
+						lil.css</a> <a class="lil-btn inline block" href="css/lil.css" download="lil">Get
+						lil.min.css</a></p>
+				<p>Next you just have to link it in your HTML file head tag :</p>
+
+				<pre><code class="html"><link rel="stylesheet" href="lil.css"></code></pre>
+
+			</div>
+		</section>
+
+
+		<!--============Positioning Section============-->
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Positioning</h2>
+				<hr>
+			</div>
+			<div class="body">
+				<p>Thanks to a custom grid and some custom
+					HTML/CSS classes, lil.css can help you to organise your elements.
+				</p>
+
+
+				<h3 class="subtitle">Left, Right, Center :</h3>
+
+				<button class="lil-btn blue width-50 left">Left</button>
+				<div class="lil-clear"></div>
+				<button class="lil-btn blue width-50 center" style="margin: 10px auto;">Center</button>
+				<button class="lil-btn blue width-50 right">Right</button>
+				<div class="lil-clear"></div>
+
+				<p>You can use the <span class="lil-code">left</span>, <span class="lil-code">right</span> and <span
+						class="lil-code">center</span> classes to position your elements. Do not forget to
+					include the <span class="lil-code">lil-clear</span> element when it is needed to end the float
+					property.
+				</p>
+				<p>PS: <span class="lil-code">left</span> and <span class="lil-code">right</span> use floats but <span
+						class="lil-code">center</span> use margin and display so you will need the
+					<span class="lil-code">lil-clear</span> element to isolate them.
+				</p>
+
+				<pre><code class="html"><button class="lil-btn blue width-50 left">Left</button>&#13;<div class="lil-clear"></div>&#13;<button class="lil-btn blue width-50 center">Center</button>&#13;<button class="lil-btn blue width-50 right">Right</button>&#13;<div class="lil-clear"></div></code></pre>
+
+
+				<h3 class="subtitle">Text align :</h3>
+
+				<p>If you need to change your text align you can use the <span
+						class="lil-code">text-<i>(insert-your-align)</i></span>
+					class.</p>
+
+				<h4 class="tinytitle">Center :</h4>
+				<p class="text-center"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+							accusantium esse
+							deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet mollitia
+							eos,
+							fugiat cupiditate rem. Ducimus, accusantium.</small></i>
+				</p>
+				<h4 class="tinytitle">Left :</h4>
+				<p class="text-left"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+							accusantium esse
+							deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet mollitia
+							eos,
+							fugiat cupiditate rem. Ducimus, accusantium.</small></i>
+				</p>
+				<h4 class="tinytitle">Right :</h4>
+				<p class="text-right"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+							accusantium esse
+							deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet
+							mollitia eos,
+							fugiat cupiditate rem. Ducimus, accusantium.</small></i>
+				</p>
+				<h4 class="tinytitle">Justify :</h4>
+				<p class="text-justify"><i><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Sint accusantium esse
+							deserunt corrupti eum quae? Magni consectetur debitis est quos? Ratione nulla amet
+							mollitia eos,
+							fugiat cupiditate rem. Ducimus, accusantium.</small></i>
+				</p>
+
+				<pre><code class="html"><p class="text-center">This is a centered paragraph.</p>&#13;<p class="text-left">This is a left paragraph.</p>&#13;<p class="text-right">This is a right paragraph.</p>&#13;<p class="text-justify">This is a justified paragraph.</p></code></pre>
+
+
+				<h3 class="subtitle">Block, Inline :</h3>
+
+				<p>By using the <span class="lil-code">block</span> and <span class="lil-code">inline</span>
+					classes
+					you can change the display property without looking at
+					the CSS.
+				</p>
+
+				<h4 class="tinytitle">Block :</h4>
+
+				<button class="lil-btn blue block">Blue</button>
+				<button class="lil-btn red block" style="margin: 10px 0;">Red</button>
+				<button class="lil-btn green block">Green</button>
+
+				<p>Simply use the <span class="lil-code">block</span> class to add the <span class="lil-code">display:
+						block</span> property to an element.</p>
+
+				<pre><code class="html"><button class="lil-btn blue block">Blue</button>&#13;<button class="lil-btn red block">Red</button>&#13;<button class="lil-btn green block">Green</button></code></pre>
+
+				<h4 class="tinytitle">Inline :</h4>
+
+				<button class="lil-btn blue inline">Blue</button>
+				<button class="lil-btn red inline">Red</button>
+				<button class="lil-btn green inline">Green</button>
+
+				<p>You can also use the <span class="lil-code">inline</span> class to add the <span
+						class="lil-code">display:
+						inline</span> property to an element.</p>
+
+				<pre><code class="html"><button class="lil-btn blue inline">Blue</button>&#13;<button class="lil-btn red inline">Red</button>&#13;<button class="lil-btn green inline">Green</button></code></pre>
+
+				<h4 class="tinytitle">Inline-block :</h4>
+
+				<button class="lil-btn blue inline block">Blue</button>
+				<button class="lil-btn red block inline">Red</button>
+				<button class="lil-btn green inline block">Green</button>
+
+				<p>By adding both the <span class="lil-code">block</span> and <span class="lil-code">inline</span>
+					classes you can add the <span class="lil-code">display: inline-block</span> property
+					to an element.
+				</p>
+
+				<pre><code class="html"><button class="lil-btn blue inline block">Blue</button>&#13;<button class="lil-btn red block inline">Red</button>&#13;<button class="lil-btn green inline block">Green</button></code></pre>
+
+
+				<h3 class="subtitle">The grid :</h3>
+
+				<p>lil.css comes with a custom grid (inspired by <a href="https://github.com/1000ch/grd"
+						target="_blank">Grd</a>)
+					to help with the layout of your project(s). The grid is very light and
+					simple to use.
+				</p>
+
+				<div class="lil-row">
+					<div class="lil-col 6-12">
+						<p class="ex-col-nm">I'm a column!</p>
+					</div>
+					<div class="lil-col 6-12">
+						<p class="ex-col-nm">I another column!</p>
+					</div>
+				</div>
+
+				<p>Create rows and columns using <span class="lil-code">lil-row</span> and <span
+						class="lil-code">lil-col</span>.</p>
+
+				<pre><code class="html" id="codeExempleGrid1"></code></pre>
+
+				<p>Classes you can use on a <span class="lil-code">lil-row</span> :</p>
+
+				<table class="lil-table width-100">
+					<tr>
+						<th>Class</th>
+						<th>Property</th>
+					</tr>
+					<tr>
+						<td><span class="lil-code">top</span></td>
+						<td>Pull your columns to the top of the row.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">middle</span></td>
+						<td>Pull your columns to the middle of the row.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">bottom</span></td>
+						<td>Pull your columns to the bottom of the row.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">stretch</span></td>
+						<td>Stretch the columns.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">baseline</span></td>
+						<td>Pull columns content to baseline.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">left</span></td>
+						<td>Pull your columns to the left of the row.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">center</span></td>
+						<td>Pull your columns to the center of the row.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">right</span></td>
+						<td>Pull your columns to the right of the row.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">between</span></td>
+						<td>Add spaces between your columns.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">around</span></td>
+						<td>Add spaces around your columns.</td>
+					</tr>
+				</table>
+
+				<p>Classes you can use on a <span class="lil-code">lil-col</span> :</p>
+
+				<table class="lil-table width-100">
+					<tr>
+						<th>Class</th>
+						<th>Property</th>
+					</tr>
+					<tr>
+						<td><span class="lil-code">n-12</span></td>
+						<td>Replacing "n" by the a integer (1-12) you can change the size of the column.</td>
+					</tr>
+					<tr>
+						<td><span class="lil-code">fill</span></td>
+						<td>Set the column width to left.</td>
+					</tr>
+				</table>
+
+				<p>Here is a little exemple of what you can do with the grid:</p>
+
+				<div class="lil-row between">
+					<div class="lil-col 1-12">
+						<p class="ex-col line-clip">1-12</p>
+					</div>
+					<div class="lil-col 11-12">
+						<p class="ex-col">11-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 2-12">
+						<p class="ex-col">2-12</p>
+					</div>
+					<div class="lil-col 10-12">
+						<p class="ex-col">10-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 3-12">
+						<p class="ex-col">3-12</p>
+					</div>
+					<div class="lil-col 9-12">
+						<p class="ex-col">9-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 4-12">
+						<p class="ex-col">4-12</p>
+					</div>
+					<div class="lil-col 8-12">
+						<p class="ex-col">8-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 5-12">
+						<p class="ex-col">5-12</p>
+					</div>
+					<div class="lil-col 7-12">
+						<p class="ex-col">7-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 6-12">
+						<p class="ex-col">6-12</p>
+					</div>
+					<div class="lil-col 6-12">
+						<p class="ex-col">6-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 7-12">
+						<p class="ex-col">7-12</p>
+					</div>
+					<div class="lil-col 5-12">
+						<p class="ex-col">5-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 8-12">
+						<p class="ex-col">8-12</p>
+					</div>
+					<div class="lil-col 4-12">
+						<p class="ex-col">4-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 9-12">
+						<p class="ex-col">9-12</p>
+					</div>
+					<div class="lil-col 3-12">
+						<p class="ex-col">3-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 10-12">
+						<p class="ex-col">10-12</p>
+					</div>
+					<div class="lil-col 2-12">
+						<p class="ex-col">2-12</p>
+					</div>
+				</div>
+				<div class="lil-row between">
+					<div class="lil-col 11-12">
+						<p class="ex-col">11-12</p>
+					</div>
+					<div class="lil-col 1-12">
+						<p class="ex-col line-clip">1-12</p>
+					</div>
+				</div>
+
+				<pre><code class="html" id="codeExempleGrid2"></code></pre>
+
+		</section>
+
+
+		<!--============Sizing Section============-->
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Sizing</h2>
+				<hr>
+			</div>
+			<div class="body">
+
+				<p>You can quickly change the width of your elements by adding the class <span
+						class="lil-code">width-25/33/50/75/100</span>.</p>
+
+				<p class="width-25 ex-col">My width is 25%</p>
+				<p class="width-33 ex-col">My width is 33%</p>
+				<p class="width-50 ex-col">My width is 50%</p>
+				<p class="width-75 ex-col">My width is 75%</p>
+				<p class="width-100 ex-col">My width is 100%</p>
+
+				<pre><code class="html"><p class="width-25">My width is 25%</p>&#13;<p class="width-33">My width is 33%</p>&#13;<p class="width-50">My width is 50%</p>&#13;<p class="width-75">My width is 75%</p>&#13;<p class="width-100">My width is 100%</p></code></pre>
+
+			</div>
+		</section>
+
+
+		<!--============Buttons Section============-->
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Buttons</h2>
+				<hr>
+			</div>
+			<div class="body">
+
+				<p>Here you have some customs buttons. You can use different colors, sizes, and styles by adding
+					simple classes.
+				</p>
+				<p>Just use the <span class="lil-code">lil-btn</span> class to use them.</p>
+
+
+				<h3 class="subtitle">Regular Buttons :</h3>
+
+				<div>
+					<button class="lil-btn margin-tb-5">Blue (Default)</button>
+					<button class="lil-btn red margin-tb-5">Red</button>
+					<button class="lil-btn green margin-tb-5">Green</button>
+					<button class="lil-btn yellow margin-tb-5">Yellow</button>
+					<button class="lil-btn orange margin-tb-5">Orange</button>
+					<button class="lil-btn purple margin-tb-5">Purple</button>
+					<button class="lil-btn light margin-tb-5">Light</button>
+					<button class="lil-btn dark margin-tb-5">Dark</button>
+					<button class="lil-btn link margin-tb-5">Link</button>
+					<button class="lil-btn" disabled>Disabled</button>
+				</div>
+
+				<p>You can change the color of a button simply by adding the corresponding color class.</p>
+
+				<pre><code class="html"><button class="lil-btn red">Red button</button></code></pre>
+
+
+				<h3 class="subtitle">Outline buttons :</h3>
+
+				<div>
+					<button class="lil-btn outline margin-tb-5">Blue (Default)</button>
+					<button class="lil-btn outline red margin-tb-5">Red</button>
+					<button class="lil-btn outline green margin-tb-5">Green</button>
+					<button class="lil-btn outline yellow margin-tb-5">Yellow</button>
+					<button class="lil-btn outline orange margin-tb-5">Orange</button>
+					<button class="lil-btn outline purple margin-tb-5">Purple</button>
+				</div>
+
+				<p>You can make an outline button by adding the <span class="lil-code">outline</span> class to an
+					element with the <span class="lil-code">lil-btn</span>
+					class.
+				</p>
+
+				<pre><code class="html"><button class="lil-btn outline orange">Orange outline button</button></code></pre>
+
+			</div>
+		</section>
+
+
+		<!--============Inputs Section============-->
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Inputs</h2>
+				<hr>
+			</div>
+			<div class="body">
+				<p>You can use custom inputs along with the grid to make nice forms.</p>
+				<form>
+					<div class="lil-row between">
+						<div class="lil-col 6-12">
+							<label class="lil-label">Your email</label>
+							<input type="email" class="lil-input width-100" placeholder="exemple@exemple.com">
+							<small class="lil-info">Please enter your email address.</small>
+						</div>
+						<div class="lil-col 6-12">
+							<label class="lil-label">Your name</label>
+							<input type="text" class="lil-input width-100" placeholder="Josh Kurt">
+							<small class="lil-info">Please enter your awesome name.</small>
+						</div>
+					</div>
+					<div class="lil-row">
+						<div class="lil-col 12-12">
+							<label class="lil-label">Message</label>
+							<textarea class="lil-input max-width-100 width-100" placeholder="Hey there..."></textarea>
+						</div>
+					</div>
+					<div class="lil-row">
+						<button type="submit" class="lil-btn width-25">Submit</button>
+					</div>
+				</form>
+				<p>You can make simple inputs using the <span class="lil-code">lil-input</span> class on your inputs.
+				</p>
+			</div>
+		</section>
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Fonts & Typography</h2>
+				<hr>
+			</div>
+			<div class="body">
+				<p>The font <b>lil.css</b> uses is <a href="https://fonts.google.com/specimen/Heebo">"Heebo" provided by
+						Google Fonts</a>.</p>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<p>Paragraph with <b>bold</b>, <u>underline</u> and <i>Italic</i></p>
+			</div>
+		</section>
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Cards</h2>
+				<hr>
+			</div>
+			<div class="body">
+				<p>Lilcss includes cards that can help you contain your content:</p>
+				<div class="lil-row between">
+					<div class="lil-col 4-12 margin-tb-10">
+						<div class="lil-card width-100">
+							<img class="lil-card-img" src="https://picsum.photos/300/150" alt="">
+							<div class="lil-card-body">
+								<h5 class="lil-card-title">This is my card body title</h5>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto ipsa
+									illum
+									dolorum quibusdam dolorem.</p>
+								<button class="lil-btn width-100">My fav button</button>
+							</div>
+						</div>
+					</div>
+					<div class="lil-col 4-12 margin-tb-10">
+						<div class="lil-card width-100">
+							<div class="lil-card-header">
+								Card header
+							</div>
+							<div class="lil-card-body">
+								<h5 class="lil-card-title">This is my card body title</h5>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto ipsa
+									illum
+									dolorum quibusdam dolorem.</p>
+								<button class="lil-btn width-100">My fav button</button>
+							</div>
+						</div>
+					</div>
+					<div class="lil-col 4-12 margin-tb-10">
+						<div class="lil-card width-100">
+							<div class="lil-card-body">
+								<h5 class="lil-card-title">This is my card body title</h5>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto ipsa
+									illum
+									dolorum quibusdam dolorem.</p>
+							</div>
+							<div class="lil-card-footer">
+								<button class="lil-btn width-100">I'm a button on the footer</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br>
+				<div class="lil-row">
+					<p>It is as easy to use as the rest, just use <span class="lil-code">lil-card</span> to create your
+						card and <span class="lil-code">lil-card-header</span>, <span
+							class="lil-code">lil-card-body</span>, <span class="lil-code">lil-card-footer</span> to
+						structure your card.
+					</p>
+					<p>You can also add a body title to your card by using the <span
+							class="lil-code">lil-card-title</span> class in the body of your card.
+					</p>
+					<p>If you want to add images just use the <span class="lil-code">lil-card-img</span> class.</p>
+				</div>
+			</div>
+		</section>
+		<section class="lil-section">
+			<div class="header">
+				<h2 class="title">Navigation</h2>
+				<hr>
+			</div>
+			<div class="body">
+				<p>You can make navigation containing links, <span class="lil-code">lil-btn</span> elements and <span class="lil-code">lil-input</span> elements.</p>
+				<nav class="lil-nav rounded">
+					<ul class="lil-nav-items">
+						<li><a class="lil-nav-brand" href="#">
+								<img src="https://picsum.photos/200/?random" alt="">
+								lil.css</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a class="disabled" href="#">Contact</a></li>
+						<li class="right">
+							<input class="lil-input" type="text" style="margin-right:5px;" placeholder="Search">
+							<button class="lil-btn" style="margin-left:5px;">Search</button>
+						</li>
+					</ul>
+					<div class="lil-clear"></div>
+				</nav>
+			</div>
+		</section>
+
+		<!-- <div class="lil-row between">
+			<div class="lil-col sm-6-12 md-12-12">
+				<p class="ex-col">Col</p>
+			</div>
+			<div class="lil-col sm-6-12 md-12-12">
+				<p class="ex-col">Col</p>
+			</div>
+		</div> -->
+
+	</main>
+
+	<footer>
+		<hr>
+		<div class="left">
+			<p>Made with love by Colin</p>
+		</div>
+		<div class="right">
+			<p>Copyright 2018</p>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+	<script>
+		document.querySelectorAll("code").forEach(function (element) {
+			element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g,
+				"&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+		});
+	</script>
 </body>
 
 </html>
