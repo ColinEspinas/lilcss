@@ -11,9 +11,9 @@ Or download the css files from the github repository:
 <link rel='stylesheet' href='lil.min.css'>
 ```
 
-You can also choose wich version to use, if you just need the grid or the utility classes just take "grid.css" or "utility.css".
+You can also **choose wich version to use**, if you just need the grid or the utility classes just take "grid.css" or "utility.css".
 
-Use the minified version if needed for production. 
+Use the minified version if needed. 
 
 ### Docs:
 
